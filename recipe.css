@@ -1,0 +1,65 @@
+body{
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image:url(images/silverware.jpg) ;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+}
+.copyright{
+    font-family: monospace;
+    text-align: right;
+}
+ul{
+    list-style-image: url(images/pie_bullet.png);
+}
+.cake{
+    display: inline;
+}
+#validator{
+    text-align: right;
+}
+#htmlval{
+   display: inline-block;
+}
+#cssval{
+    display: inline-block;
+}
+#cakeStrike{
+    text-decoration: line-through;
+}
+blockquote{
+    text-align: left;
+    background-color: #FFFFA8;
+}
+.commenter{
+    text-indent: 25pt;
+    background-color: #FFFFA8;
+}
+a{
+    color: #A4A400;
+}
+h1,h2{
+ color:  #A4A400 ;
+ background-color: #F0F0F0;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ letter-spacing: .25em;
+ text-decoration: underline;
+}
+h1{
+   text-align: center;
+   font-weight: bold;
+   font-size: 22pt;
+   
+}
+h1 span {
+    background-color:lightgrey;
+    
+}
+h2{
+    text-align: left;
+    font-weight: normal;
+    font-size: 18pt;
+}
