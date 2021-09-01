@@ -1,0 +1,36 @@
+#amhaheader{
+    color: #373773;
+    font-weight:bolder;
+}
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#left{
+width:33.33%;
+float:left;
+}
+#right{
+    width:33.33%;
+    margin:0 auto;
+}
+.moodimg {
+    width:400px;
+    height:350px;
+}
+.friends{
+    background-color: aliceblue;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    background-color:#575454;
+}
+p::first-letter{
+    text-transform:capitalize;
+    font-size: 150%;
+}
+ol{
+    transform: rotate(180);
+}
