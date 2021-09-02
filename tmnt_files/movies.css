@@ -108,6 +108,19 @@ p{
     padding: 10px;
     background:#A2B964;
 }
+dl{
+    font-size: 10pt;
+}
+dl dt {
+    font-weight: bold;
+}
+.overdetails a {
+    text-decoration: none;
+}
+.overdetails ul {
+   list-style: none;
+   padding: 0;
+}
 .ending{
     grid-column: 1/4;
     background:#A2B964;
