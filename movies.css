@@ -1,0 +1,39 @@
+body{
+    
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(5px,auto);
+
+}
+.wrapper > div{
+    background:#eee;
+}
+.wrapper > div:nth-child(odd){
+
+    background: #ddd;
+}
+.wrapper > div > div:nth-child(odd){
+    background: #def;
+}
+
+.banner{
+    grid-column: 1/4;
+}
+.header{
+    grid-column: 1/4;
+}
+.mainContent{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(5px,auto);
+}
+.mainright{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.validator{
+    background: blue;
+}
