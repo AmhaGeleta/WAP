@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="htmlform.css" type="text/css" rel="stylesheet"/>
+
+    <title>Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action= "http://mumstudents.org/params.php">
+            <div>
+                <legend> New User SignUp </legend> 
+                <p> <strong> Name :  </strong> <input type ="text" name ="name" size="16"/> </p>
+                <p> <strong> Gender :</strong> <lable>  <input type = "radio" name="gender" value = "Male" /> Male </lable> <lable>  <input type = "radio" name="gender" value = "Female" /> Female </lable></p>
+                <p> <strong> Age :  </strong><input type ="text" name ="age" size="6"/> </p>
+                <p> <strong> Personality Type : </strong> <input type ="text" name ="Personality" size="4"/> <span> ( Did you know your Type ? )</span> </p>
+                <p> <strong> Favorite OS : </strong> 
+                    <select name ="os">
+                        <option> Windows</option>
+                        <option> Linux</option>
+                        <option> Mac</option>
+                    </select>
+                    
+                <p> <strong> Seeking Age : </strong> <input type ="text" name ="min" size="6" placeholder ="min" /> to <input type ="text" name ="max" size="6" placeholder ="max" /> </p>
+                <p> <input type ="submit" value ="signup" />  </p>
+                </p>
+            </div>
+        </form>
+
+    </div>
+
+    <div>
+        <a href="http://validator.w3.org/check?uri=https://amhageleta.github.io/WAP/htmlform.html"><img src="./tmnt_files/w3c-html.png" alt="Valid HTML5"></a> <br>
+        <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://amhageleta.github.io/WAP/htmlform.html"><img src="./tmnt_files/w3c-css.png" alt="Valid CSS"></a>
+    </div>
+    
+</body>
+</html>

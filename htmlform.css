@@ -1,0 +1,39 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+form{
+
+}
+form div {
+    border:1px solid gray;
+    grid-column: 1fr 1fr;
+    display: grid;
+    z-index: -1;
+    justify-items: left;
+    padding-left: 10px;
+    background:lightsteelblue;
+    border-radius: 10px;
+}
+legend{
+    border: 1px solid gray;
+    margin-left: 10px;
+    grid-column: 1;
+    margin-top: -5px;
+    height:20px;
+    z-index: 2;
+    background:linen;
+    
+   
+   
+}
+input[type= submit]{
+    font-weight: bold;
+    padding: 8px;
+    font-size: 1em;
+    background:lightcoral;
+}
+form div p span{
+    color:    lightcoral;
+    ;
+}
