@@ -4,11 +4,11 @@
 }
 form{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 form div {
     border:1px solid gray;
-    grid-column: 1fr 1fr 1fr;
+    grid-column: 1fr;
     display: grid;
     z-index: -1;
     justify-items: left;
@@ -16,7 +16,7 @@ form div {
     background:lightsteelblue;
     border-radius: 10px;
 }
-legend{
+.signup{
     border: 1px solid gray;
     margin-left: 10px;
     grid-column: 1;
