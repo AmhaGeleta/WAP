@@ -8,7 +8,7 @@ form{
 }
 form div {
     border:1px solid gray;
-    grid-column: 1fr 1fr;
+    grid-column: 1fr 1fr 1fr;
     display: grid;
     z-index: -1;
     justify-items: left;
