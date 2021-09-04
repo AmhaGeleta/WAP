@@ -3,16 +3,65 @@
     <head>
         <title>Amha Geleta Home Page</title>
         <style>
-            img{
+            wrapper {
+                display: grid;
+                grid-template-columns: 1fr 3fr 1fr;
+            }
+            .left{
+                grid-column:1;
+            }
+            .right{
+                grid-column:4;
+            }
+            .middle{
+                grid-column:2/3;
+                display: grid;
+                grid-template-columns:1fr 4fr;
+            }
+            .profile{
+                background-color:#3c4b7d;
+            }
+            .myname{
+                background-color:#3c4b7d;
+            }
+           .middle  img{
+               grid-column:1; 
                width: 150px;
                height: 200px;
                border-radius: 50%;
+               margin-left: 100px;
+               margin-top:10px;
+              
             }
+            .middle h1{
+                grid-column:2/3;
+                margin-top: 80px;
+                font-size:5em;
+                color: white;
+            }
+            ul {
+                list-style-type: none;
+            }
+            ul a{
+                text-decoration: none;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 1.5em;
+
+            }
+            ul a:hover{
+                background-color:#3c4b7d;
+                color: white;
+            }
+
             footer {
                     text-align: center;
                     padding: 3px;
-                    background-color:gray;
+                    background-color:#3c4b7d;
                     color: white;
+            }
+            footer a{
+                text-decoration: none;
+                color: white;
             }
         
     
@@ -20,8 +69,24 @@
     </head>
 
     <body>
-     <img src = "images/profile.jpg" alt ="Amha Geleta">  
-        <h1> Amha Geleta</h1>
+        <div class="wrapper">
+            <div class="left"></div>
+            <div class="middle"> 
+                <div class="profile">
+                    <img src = "images/profile.jpg" alt ="Amha Geleta">
+                </div>
+                <div class="myname">
+                    <h1> Amha Geleta</h1>
+                </div>
+
+
+            </div>
+            <div class="right"></div>
+
+
+        </div>
+       
+      
         <ul>
             <li> <a href = "index.html" > Lab 1 - Home Page </a></li>
             <li> <a href = "https://amhageleta.github.io/WAP/Aboutme.html" > Lab 2 -  About Me </a></li>
@@ -29,6 +94,13 @@
             <li> <a href = "https://amhageleta.github.io/WAP/tmnt.html" > Lab 4 - Movies </a></li>
             <li> <a href = "https://amhageleta.github.io/WAP/grade.html" > Lab 5 Grade Exercise</a></li>
             <li> <a href = "https://amhageleta.github.io/WAP/htmlform.html" > Lab 6 - HTML Forms </a></li>
+            <li> <a href = "https://amhageleta.github.io/WAP/Buggy Page 1.html" > Lab 7 - JS Buggy 1 </a></li>
+            <li> <a href = "https://amhageleta.github.io/WAP/Buggy Page 2.html" > Lab 7 - JS Buggy 2 </a></li>
+            <li> <a href = "https://amhageleta.github.io/WAP/Buggy Page 3.html" > Lab 7 - JS Buggy 3 </a></li>
+            <li> <a href = "https://amhageleta.github.io/WAP/Buggy Page 4.html" > Lab 7 - JS Buggy 4 </a></li>
+            <li> <a href = "https://amhageleta.github.io/WAP/tipcalculator.html" > Lab 7 - Tip Calculator </a></li>
+            <li> <a href = "https://amhageleta.github.io/WAP/onclickalert.html" > Lab 7 - On Click</a></li>
+
 
         </ul>
         <a
@@ -36,7 +108,7 @@
         src="images/w3c-html.png"
         alt="html validator"/></a>
         
-            <footer>
+        <footer>
         <p>Author: Amha Geleta</p>
         <p> Maharishi International University <br>          Address: 1000 N 4th Street, Fairfield Iowa</p>
         <p><a href="mailto:ageleta@miu.edu">ageleta@miu.edu</a></p>
