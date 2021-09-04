@@ -1,0 +1,49 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  
+}
+.left{
+  grid-column: 1;
+}
+.middle{
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   grid-column: 2/3;
+   align-content: start;
+}
+.logo {
+    grid-column: 1;
+
+}
+.header  {
+    grid-column: 2;
+    height:50px;
+    margin-top:120px;
+    
+}
+
+.right{
+   grid-column: 4;
+}
+input {
+    margin:5px;
+    border-radius: 10px;
+    height:30px;
+
+
+}
+button{
+    border-radius: 10px;
+    height:35px;
+    width:95%;
+    margin-left:5px;
+    
+}
+label {
+    margin:5px;
+}
+hr{
+    width:100%;
+    grid-column: 1/3;
+}

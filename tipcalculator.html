@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ="tipcalc.css" type ="text/css" rel ="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFunc(){
+            var tip = parseFloat( document.getElementById("tip").value) ;
+            var subtotal = parseFloat( document.getElementById("subtotal").value);
+            var output = tip+subtotal;
+            document.getElementById("labl").innerText = output;
+        }
+    </script>
+    <div class="wrapper">
+        <div class="left"></div>
+        <div class="middle">
+            <div class="logo">
+                <img src ="images/calc.jpg" alt="Calc"/>
+            </div>
+            <div class="header">
+                <h1>Tip Calculator</h1>
+            </div>
+            
+            
+            <input type="text" id ="subtotal"> <label> $Sub Total</label>
+            <input type="text" id ="tip"> <label> $Tip</label>
+             <button onclick="myFunc();">Calculate Tip</button>
+             <hr>
+             <h1>Your Total $</h1>
+            
+             <h1 id="labl">  </h1>
+            
+        </div>
+
+        <div class="right"></div>
+        
+    </div>
+    
+</body>
+</html>
