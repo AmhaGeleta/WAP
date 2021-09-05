@@ -7,14 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick ="myFunction();">Click me! </button>
-    <input id ="inp" type="text" name ="user" placeholder="Amha"> </input>
+    <button id ="butn">Click me! </button>
+    <input type="text" name ="user" > </input>
+    <label id = "mylabel" > </label>
+
     <p>
         <script>
+        
+            var myBtn = document.getElementById("butn");
+               myBtn.onclick = myFunction;
+      
+           
            function myFunction(){
-               var test = document.getElementById("inp").innerText;
-               alert(test);
-           }
+
+               window.open("http://google.com" ,"My Foo Window", "width=900, height=600,scrollbars=1");
+               var promp = prompt("Your Name Please");
+
+               if(promp != null){
+                document.getElementById("mylabel").innerHTML = "Good Morning "+ promp;
+               }
+              
+            }
         </script>
     </p>
     
