@@ -11,7 +11,9 @@
     <script>
         function myFunc(){
             var tip = parseFloat( document.getElementById("tip").value) ;
+           
             var subtotal = parseFloat( document.getElementById("subtotal").value);
+            tip = tip/100 * subtotal;
             var output = tip+subtotal;
             document.getElementById("labl").innerText = output;
         }
