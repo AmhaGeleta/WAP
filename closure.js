@@ -34,7 +34,7 @@ function rudyTimer(){
      
     (function(){
         setInterval(function(){
-           alert("Rudy");
+           alert("Rudy => reload to terminate this alert message and procede to the next exercise");
         }, 1000);
         
     })();
