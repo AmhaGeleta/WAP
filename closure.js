@@ -30,14 +30,43 @@ function pageLoaded(){
 }
 
 
-function rudyTimer(){
-     
-    (function(){
-        setInterval(function(){
-           alert("Rudy ---- reload to terminate this alert message and procede to the next exercise");
-        }, 1000);
+var  rudyTimer =  (function(){    
+   
+        return function(){
+            setInterval(function(){
+                alert("Rudy ---- reload to terminate this alert message and procede to the next exercise");
+             }, 1000);
+        }
+
         
     })();
+
+    rudyTimer.extension = function(){
+        alert("Hi There");
+    }
     
 
-}
+var sayHello = function (name){
+    var text = "Hello " + name;
+    return function(){
+        console.log(text);
+    };
+};
+var tod = sayHello("Todd");
+var amha = sayHello("Amha");
+tod();
+amha();
+
+
+var add = (function(){
+    var counter =0;
+    
+    return function(){
+        console.log(counter);
+        return counter +=1;
+    }
+})();
+
+add();
+add();
+add();
